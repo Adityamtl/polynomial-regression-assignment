@@ -10,7 +10,7 @@ from sklearn.model_selection import KFold, cross_validate
 from sklearn.metrics import mean_squared_error, r2_score
 
 ROLLNO = "BT2024188"
-DATA_DIR = r"c:\Users\adityamittal\Downloads\New folder (14)"
+DATA_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def check_files():
     req_files = [
