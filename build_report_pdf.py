@@ -45,7 +45,7 @@ class NumberedCanvas(canvas.Canvas):
         self.line(54, 42, 558, 42)
         page_str = f"Page {self._pageNumber} of {page_count}"
         self.drawRightString(558, 30, page_str)
-        self.drawString(54, 30, "Academic Submission | Aditya Mittal (BT2024188) | GitHub: github.com/adityamittal/polynomial-regression-assignment")
+        self.drawString(54, 30, "Academic Submission | Aditya Mittal (BT2024188) | GitHub: github.com/Adityamtl/polynomial-regression-assignment")
         self.restoreState()
 
 def build_pdf(filename="BT2024188_Report.pdf"):
@@ -187,7 +187,7 @@ def build_pdf(filename="BT2024188_Report.pdf"):
     # ==========================================
     story.append(Paragraph("Machine Learning Assignment 1: Polynomial Regression", title_style))
     story.append(Paragraph("Turbine Optimization (Phase 1) & Subterranean Geothermal Mapping (Phase 2)", subtitle_style))
-    story.append(Paragraph("<b>Author / Student:</b> Aditya Mittal &nbsp;|&nbsp; <b>Roll Number:</b> BT2024188 &nbsp;|&nbsp; <b>Institution:</b> IIIT Bangalore<br/><b>GitHub Code Repository:</b> <u>https://github.com/adityamittal/polynomial-regression-assignment</u>", meta_style))
+    story.append(Paragraph("<b>Author / Student:</b> Aditya Mittal &nbsp;|&nbsp; <b>Roll Number:</b> BT2024188 &nbsp;|&nbsp; <b>Institution:</b> IIIT Bangalore<br/><b>GitHub Code Repository:</b> <u>https://github.com/Adityamtl/polynomial-regression-assignment</u>", meta_style))
     story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e0'), spaceAfter=6))
 
     story.append(Paragraph("1. Executive Summary & Problem Context", h1_style))
@@ -420,7 +420,7 @@ def build_pdf(filename="BT2024188_Report.pdf"):
         "&nbsp;&nbsp;&nbsp;&nbsp;1. <b><code>BT2024188_pred_var1.csv</code></b>: Turbine Net Power Score predictions (Degree 5 Ridge Regression).<br/>"
         "&nbsp;&nbsp;&nbsp;&nbsp;2. <b><code>BT2024188_pred_var2.csv</code></b>: Subterranean Thermal Anomaly Score predictions (Degree 8 Ridge Regression).<br/>"
         "• <b>GitHub Repository:</b> All training pipelines, cross-validation scripts, exploratory data analysis code, and inference routines are committed and structured in the companion repository:<br/>"
-        "&nbsp;&nbsp;&nbsp;&nbsp;<b>Repository URL:</b> <u>https://github.com/adityamittal/polynomial-regression-assignment</u><br/>"
+        "&nbsp;&nbsp;&nbsp;&nbsp;<b>Repository URL:</b> <u>https://github.com/Adityamtl/polynomial-regression-assignment</u><br/>"
         "• <b>Reproducibility:</b> To reproduce all results and predictions from scratch, clone the repository and execute: <code>python train.py && python inference.py</code>.",
         body_style
     ))
